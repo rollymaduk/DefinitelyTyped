@@ -31,6 +31,8 @@ declare class Pubnub {
     params: Pubnub.FireParameters
   ): Promise<Pubnub.PublishResponse>;
 
+  stop():void;
+    
   subscribe(params: Pubnub.SubscribeParameters): void;
 
   unsubscribe(params: Pubnub.UnsubscribeParameters): void;
